@@ -1,0 +1,2 @@
+# ecotrip.admin
+admin area
