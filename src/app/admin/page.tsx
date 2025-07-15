@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { useMap } from "../../hooks/useMap";
 import { socket } from "../../utils/socket-io";
 
-export function AdminPage() {
+export default function AdminPage() {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const map = useMap(mapContainerRef);
 
@@ -47,5 +47,3 @@ export function AdminPage() {
 
   return <div className="h-full w-full" ref={mapContainerRef} />;
 }
-
-export default AdminPage;
